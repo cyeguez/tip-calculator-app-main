@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 //###Primary
 
 $Strongcyan: hsl(172, 67%, 45%);
@@ -11,7 +11,8 @@ $Gray-ishcyan: hsl(184, 14%, 56%);
 $Light-grayishcyan: hsl(185, 41%, 84%);
 $Very-lightgrayishcyan: hsl(189, 41%, 97%);
 $White: hsl(0, 0%, 100%);
+$Error: hsl(9, 48%, 60%, 100%);
 
 //Font
 
-$font: 'Space Mono', monospace;
+$font: "Space Mono", monospace;

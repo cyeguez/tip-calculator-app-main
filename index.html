@@ -11,30 +11,54 @@
 
 <body>
 
-  Bill
+  <h1 class="title">Spli <br> tter</h1>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <div class="container">
 
-  Number of People
+    <form class="container-content-start">
+      <label class="label-bill" for="bill">Bill</label>
+      <input type="text" class="input bg-bill" id="inputBill">
 
-  Tip Amount
-  / person
 
-  Total
-  / person
+      <div class="container-buttons">
+        <label class="label-button">Select Tip %</label>
+        <input type="button" value="5%" class="btn ">
+        <input type="button" value="10%" class="btn">
+        <input type="button" value="15%" class="btn btn--15">
+        <input type="button" value="25%" class="btn">
+        <input type="button" value="50%" class="btn"> 
+        <input type="input" placeholder="Custom" class="btn btn--custom">         
+      </div>
 
-  Reset
+      <label for="numPeople" class="label-people">Number of People 
+      <input type="text" class="input bg-people" id="numPeople" require pattern="^([1-9]|[1-9][0-9]|100)$">
+      <p class="error-label"> Can't be zero</p>
+    </label>
+    </form>
+    <div class="container-end">
+      <div class="tip-person">
+        <p class="tip-person__amount">Tip Amount <br>
+          <span class="tip-person__amount--small">/ person</span>
+        </p>
+        <p class="tip-person__total"><span class="tip-person__total--dollar">$</span>0.00</p>
+      </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="tip-person">
+        <p class="tip-person__amount">Total <br>
+          <span class="tip-person__amount--small">/ person</span>
+        </p>
+        <p class="tip-person__total"><span class="tip-person__total--dollar">$</span>0.00</p>
+      </div>
+      <input type="button" value="Reset" class="btn-reset">
+    </div>
+
+
+   
+
+
+
+
+ 
 </body>
 
 </html>
