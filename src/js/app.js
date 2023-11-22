@@ -72,11 +72,7 @@ btnReset.addEventListener("click", () => {
   tipTotal.innerText = "0.00";
 });
 
-function onlyNum(input) {
-  const regex = /[a-zA-Z]/g;
-  const newValue = input.value.replace(regex, "");
-  input.value = newValue;
-}
+
 
 function calculate() {
   if (bill > 0 && tipValue > 0 && peopleNum > 0) {
@@ -90,6 +86,12 @@ function activeSeleted(array, e) {
     element.classList.remove("selected");
   });
   e.target.classList.add("selected");
+}
+
+function onlyNum(input) {
+  const regex = /[a-zA-Z]/g;
+  const newValue = input.value.replace(regex, "");
+  input.value = newValue;
 }
 
 function onlyPlus(valNum, input) {
