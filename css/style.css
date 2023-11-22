@@ -178,13 +178,18 @@ body {
   border-radius: 1rem 1rem 0 0;
   padding: 2.375rem 2rem;
 }
-.container .container-content-start .label-blill {
+.container .container__content-start .label-blill {
   font-size: 0.75rem;
   text-align: start;
+  max-width: 175px;
+  margin: 0 auto;
 }
-.container .container-content-start .input {
+.container .container__content-start .border-error {
+  border: 1px solid hsl(9, 48%, 60%) !important;
+}
+.container .container__content-start .input {
   width: 100%;
-  height: 50px;
+  height: 36px;
   background-color: hsl(189, 41%, 97%);
   text-align: right;
   padding-right: 1rem;
@@ -193,114 +198,122 @@ body {
   color: hsl(183, 100%, 15%);
   font-weight: 700;
   border-radius: 5px;
+  border: 1px solid transparent;
 }
-.container .container-content-start .input:hover {
+.container .container__content-start .input:hover {
   cursor: pointer;
   border: 1px solid hsl(172, 67%, 45%);
 }
-.container .container-content-start .input:focus {
-  outline-color: hsl(172, 67%, 45%);
+.container .container__content-start .input:focus {
+  outline: none;
 }
-.container .container-content-start .bg-bill {
+.container .container__content-start .bg-bill {
   background-image: url("../src/images/icon-dollar.svg");
 }
-.container .container-content-start .bg-people {
+.container .container__content-start .bg-people {
   background-image: url("../src/images/icon-person.svg");
 }
-.container .container-content-start .container-buttons {
+.container .container__content-start .container-buttons {
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, minmax(146px, 1fr));
+  grid-template-columns: repeat(2, minmax(130px, 160px));
   grid-template-rows: repeat(4, 48px);
-  place-content: center;
   gap: 1rem;
+  place-content: center;
 }
-.container .container-content-start .container-buttons .label-button {
+.container .container__content-start .container-buttons .label-button {
   grid-column: 1/3;
   padding-top: 20px;
 }
-.container .container-content-start .container-buttons .btn.active {
+.container .container__content-start .container-buttons .btn.active {
   background-color: hsl(172, 67%, 45%);
 }
-.container .container-content-start .container-buttons .btn {
+.container .container__content-start .container-buttons .btn {
   background-color: hsl(183, 100%, 15%);
   text-align: center;
   color: hsl(0, 0%, 100%);
   font-size: 1.1em;
   border-radius: 5px;
   font-weight: 700;
+  height: 36px;
 }
-.container .container-content-start .container-buttons .btn:hover {
+.container .container__content-start .container-buttons .btn:hover {
   cursor: pointer;
   background-color: hsl(185, 41%, 84%);
 }
-.container .container-content-start .container-buttons .btn--custom {
+.container .container__content-start .container-buttons .btn.selected {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.container .container__content-start .container-buttons .input-custom {
   grid-column: 2/3;
   grid-row: 4/5;
   color: hsl(183, 100%, 15%);
   background-color: hsl(189, 41%, 97%);
-  text-align: right;
-  padding-right: 1rem;
+  text-align: center;
+  border: 1px solid transparent;
+  font-size: 1.1em;
+  font-weight: 700;
+  height: 36px;
 }
-.container .container-content-start .container-buttons .btn--custom::placeholder {
+.container .container__content-start .container-buttons .input-custom::placeholder {
   text-align: center;
   color: hsl(183, 100%, 15%);
 }
-.container .container-content-start .container-buttons .btn--custom:hover {
+.container .container__content-start .container-buttons .input-custom:hover {
   cursor: pointer;
   border: 1px solid hsl(172, 67%, 45%);
-  background-color: transparent;
 }
-.container .container-content-start .container-buttons .btn--custom:focus {
+.container .container__content-start .container-buttons .input-custom:focus {
   outline-color: hsl(172, 67%, 45%);
 }
-.container .label-people {
+.container .container__content-start .label-people {
   position: relative;
 }
-.container .label-people .error-label {
+.container .container__content-start .label-people .error-label {
   color: hsl(9, 48%, 60%);
   position: absolute;
   top: 0;
   right: 0;
   display: none;
 }
-.container .num-people {
+.container .container__content-start .label-people .label-people .num-people {
   width: 100%;
-  height: 3.125rem;
+  height: 2.25rem;
   background-color: hsl(189, 41%, 97%);
 }
 
-.container-end {
+.container__content-end {
   margin-block: 2rem;
   background-color: hsl(183, 100%, 15%);
   border-radius: 1rem;
   padding: 2.875rem 1.5rem 1.5rem 1.5rem;
 }
-.container-end .tip-person {
+.container__content-end .tip-person {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: hsl(172, 67%, 45%);
   margin-bottom: 2rem;
 }
-.container-end .tip-person__amount {
+.container__content-end .tip-person__amount {
   font-size: 1em;
   color: hsl(0, 0%, 100%);
 }
-.container-end .tip-person__amount--small {
+.container__content-end .tip-person__amount--small {
   font-size: 0.8125rem;
   color: hsl(186, 14%, 43%);
 }
-.container-end .tip-person__total {
+.container__content-end .tip-person__total {
   font-size: 1.5em;
   font-weight: 700;
   color: hsl(172, 67%, 45%);
 }
-.container-end .tip-person__total--dollar {
+.container__content-end .tip-person__total--dollar {
   font-size: 1.3em;
 }
-.container-end .btn-reset {
+.container__content-end .btn-reset {
   background-color: hsl(172, 67%, 45%);
   color: hsl(183, 100%, 15%);
   text-transform: uppercase;
@@ -309,7 +322,47 @@ body {
   height: 3rem;
   border-radius: 5px;
 }
-.container-end .btn-reset:hover {
+.container__content-end .btn-reset:hover {
   background-color: hsl(185, 41%, 84%);
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 705px;
+    height: 366px;
+    padding: 1.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+  }
+  .container .container__content-start {
+    width: 19.75rem;
+    height: 318px;
+  }
+  .container .container__content-start .container-buttons {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 98.9px);
+    grid-template-rows: repeat(2, 2.375rem);
+    gap: 0.6875rem;
+    place-content: center;
+  }
+  .container .container__content-start .container-buttons .label-button {
+    grid-column: 1/4;
+  }
+  .container .container__content-start .container-buttons .input-custom {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .container .label-people {
+    margin-top: 2rem;
+  }
+  .container .container__content-end {
+    width: 19.75rem;
+    height: 19.875rem;
+  }
 }

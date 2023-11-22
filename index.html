@@ -4,61 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Tip calculator app</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
-
   <h1 class="title">Spli <br> tter</h1>
 
   <div class="container">
 
-    <form class="container-content-start">
+    <div class="container__content-start">
       <label class="label-bill" for="bill">Bill</label>
-      <input type="text" class="input bg-bill" id="inputBill">
+      <input type="text" class="input bg-bill" id="inputBill" value="0">
+      </label>
 
 
       <div class="container-buttons">
         <label class="label-button">Select Tip %</label>
-        <input type="button" value="5%" class="btn ">
-        <input type="button" value="10%" class="btn">
-        <input type="button" value="15%" class="btn btn--15">
-        <input type="button" value="25%" class="btn">
-        <input type="button" value="50%" class="btn"> 
-        <input type="input" placeholder="Custom" class="btn btn--custom">         
-      </div>
 
-      <label for="numPeople" class="label-people">Number of People 
-      <input type="text" class="input bg-people" id="numPeople" require pattern="^([1-9]|[1-9][0-9]|100)$">
-      <p class="error-label"> Can't be zero</p>
-    </label>
-    </form>
-    <div class="container-end">
+
+        <button type="button" class="btn selected" id="btn5" value="5">5%</button>
+        <button type="button" class="btn " id="btn10">10%</button>
+        <button type="button" class="btn btn--15" id="btn15">15%</button>
+        <button type="button" class="btn" id="btn25">25%</button>
+        <button type="button" class="btn" id="btn50">50%</button>
+        <input type="text" placeholder="Custom" class="input-custom " id="inputCustom">
+      </div>
+      
+      <label for="numPeople" class="label-people ">Number of People
+        <input type="text" class="input   inputPeople  " id="numPeople" >
+        <p class="error-label"> Can't be zero</p>
+      </label>
+   
+    </div>
+    <div class="container__content-end">
       <div class="tip-person">
         <p class="tip-person__amount">Tip Amount <br>
           <span class="tip-person__amount--small">/ person</span>
         </p>
-        <p class="tip-person__total"><span class="tip-person__total--dollar">$</span>0.00</p>
+        <p class="tip-person__total result-amount"><span class="tip-person__total--dollar">$</span>0.00</p>
       </div>
 
       <div class="tip-person">
         <p class="tip-person__amount">Total <br>
           <span class="tip-person__amount--small">/ person</span>
         </p>
-        <p class="tip-person__total"><span class="tip-person__total--dollar">$</span>0.00</p>
+        <p class="tip-person__total result-total"><span class="tip-person__total--dollar">$</span>0.00</p>
       </div>
       <input type="button" value="Reset" class="btn-reset">
     </div>
 
-
-   
-
+  </div>
 
 
 
- 
+  <script src="./src/js/app.js"></script>
+
 </body>
 
 </html>
