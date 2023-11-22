@@ -35,7 +35,7 @@ Users should be able to:
 
 <a href="https://cyeguez.github.io/tip-calculator-app-main/" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
 
-## My process
+
 
 ## My process
 
