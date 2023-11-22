@@ -76,8 +76,10 @@ btnReset.addEventListener("click", (e) => {
   tipPerson.innerText = "0.00";
   tipTotal.innerText = "0.00";
   inputCustom.value = "Custom";
+  bill=0;
   activeSeleted(buttons,e);
   buttons[0].classList.add("selected");
+  peopleNum=0;
     
 });
 
