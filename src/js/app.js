@@ -70,12 +70,15 @@ inputCustom.addEventListener("input", (e) => {
   }
 });
 
-btnReset.addEventListener("click", () => {
+btnReset.addEventListener("click", (e) => {
   inputBill.value = "";
   inputPeople.value = "";
   tipPerson.innerText = "0.00";
   tipTotal.innerText = "0.00";
   inputCustom.value = "Custom";
+  activeSeleted(buttons,e);
+  buttons[0].classList.add("selected");
+    
 });
 
 
