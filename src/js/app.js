@@ -58,11 +58,16 @@ buttons.forEach((button) => {
 
 //Agregar los eventos al input custom
 
-inputCustom.addEventListener("input", () => {
+inputCustom.addEventListener("input", (e) => {
   onlyNum(inputCustom);
-  tipValue = parseInt(inputCustom.value); //casteando que el valor sea de tipo numérico
-
   onlyPlus(tipValue, inputCustom);
+  activeSeleted(buttons,e);
+  
+  tipValue = parseInt(inputCustom.value); //casteando que el valor sea de tipo numérico
+  if (tipValue>0 || isNaN(tipValue)){
+    calculate();
+
+  }
 });
 
 btnReset.addEventListener("click", () => {
@@ -70,6 +75,7 @@ btnReset.addEventListener("click", () => {
   inputPeople.value = "";
   tipPerson.innerText = "0.00";
   tipTotal.innerText = "0.00";
+  inputCustom.value = "Custom";
 });
 
 
