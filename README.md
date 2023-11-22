@@ -68,8 +68,8 @@ I learned the use of input at a deeper level, how to extract data from asynchron
 
 ## Author
 
-- Website - [Add your name here](https://github.com/cyeguez/tip-calculator-app-main)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/cyeguez)
+- Website - [Git Repositories](https://github.com/cyeguez/tip-calculator-app-main)
+- Frontend Mentor - [@Cyeguez](https://www.frontendmentor.io/profile/cyeguez)
 
 
 
